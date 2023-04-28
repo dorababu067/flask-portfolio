@@ -1,0 +1,88 @@
+{% extends "base.html" %}
+
+<title>{% block title %} Projects {% endblock %}</title>
+
+{% block content %}
+<!-- Projects Section-->
+<section class="py-5">
+    <div class="container px-5 mb-5">
+        <div class="text-center mb-5">
+            <h1 class="display-5 fw-bolder mb-0"><span class="text-gradient d-inline">Projects</span></h1>
+        </div>
+        <div class="row gx-5 justify-content-center">
+            <div class="col-lg-11 col-xl-9 col-xxl-8">
+                <!-- Project Card 1-->
+                <div class="card overflow-hidden shadow rounded-4 border-0 mb-5">
+                    <div class="card-body p-0">
+                        <div class="d-flex align-items-center">
+                            <div class="p-5">
+                                <h2 class="fw-bolder">1. Frappy</h2>
+                                <p>Restaurant ratings identify restaurants according to their quality, using notations
+                                    such as stars or other symbols, or numbers. Stars are a familiar and popular symbol,
+                                    with scales of one to three or five stars commonly used.</p>
+                            </div>
+                            <!-- <img class="img-fluid" src="" alt="Frappy" /> -->
+                        </div>
+                    </div>
+                </div>
+                <!-- Project Card 2-->
+                <div class="card overflow-hidden shadow rounded-4 border-0 mb-5">
+                    <div class="card-body p-0">
+                        <div class="d-flex align-items-center">
+                            <div class="p-5">
+                                <h2 class="fw-bolder">2. Dflux</h2>
+                                <p>Dulux's ability to build data science models with speed and at scale
+                                    delivers more innovation and intelligence and centralized client outcomes than ever
+                                    before.
+                                </p>
+                            </div>
+                            <!-- <img class="img-fluid" src="" alt="Dflux" /> -->
+                        </div>
+                    </div>
+                </div>
+                <!-- Project Card 3-->
+                <div class="card overflow-hidden shadow rounded-4 border-0 mb-5">
+                    <div class="card-body p-0">
+                        <div class="d-flex align-items-center">
+                            <div class="p-5">
+                                <h2 class="fw-bolder">3. Medage</h2>
+                                <p>DA complete Healthcare information management system with voice recognition, chat
+                                    assistance, AI-powered radiology, telehealth, patient care & management, and
+                                    healthcare IT assistance.
+                                </p>
+                            </div>
+                            <!-- <img class="img-fluid" src="" alt="Medage" /> -->
+                        </div>
+                    </div>
+                </div>
+                <!-- Project Card 4-->
+                <div class="card overflow-hidden shadow rounded-4 border-0 mb-5">
+                    <div class="card-body p-0">
+                        <div class="d-flex align-items-center">
+                            <div class="p-5">
+                                <h2 class="fw-bolder">4. Edgar</h2>
+                                <p>Adobe InDesign and its INDD file format are the go-to standards for desktop
+                                    publishing. There's one issue, though you need InDesign to open and view INDD
+                                    documents. That's why designers usually export InDesign files to PDFs to share them.
+
+                                </p>
+                            </div>
+                            <!-- <img class="img-fluid" src="" alt="Edgar" /> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Call to action section-->
+<section class="py-5 bg-gradient-primary-to-secondary text-white">
+    <div class="container px-5 my-5">
+        <div class="text-center">
+            <h2 class="display-4 fw-bolder mb-4">Let's build something together</h2>
+            <a class="btn btn-outline-light btn-lg px-5 py-3 fs-6 fw-bolder" href="{{url_for('contact')}}">Contact
+                me</a>
+        </div>
+    </div>
+</section>
+{% endblock %}
